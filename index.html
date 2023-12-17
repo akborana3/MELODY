@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Melody Player - Find Your Groove</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/js/all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/he/1.2.0/he.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Melody Player</h1>
+    <p>Discover your new favorite tunes.</p>
+  </header>
+  <main>
+    <div class="search-container">
+      <input id="song-name" type="text" placeholder="Search for a song...">
+      <button id="search-button">Play It!</button>
+      <button id="clear-search-button">Clear Search</button>
+    </div>
+    <div id="results-container" class="grid-container"></div>
+    <div id="loading" class="search-status">Searching for your groove...</div>
+    <audio id="music-player" controls>
+      <source src="" type="audio/mpeg">
+    </audio>
+    <button id="play-all-button">Play All</button>
+    <div id="lyrics-modal" class="modal">
+      <div class="modal-content">
+        <h3>Lyrics</h3>
+        <p id="lyrics-content"></p>
+        <button class="modal-close">Close</button>
+      </div>
+    </div>
+  </main>
+  <footer>
+  <p>&copy; Melody Player. Crafted with passion since 2021.</p>
+  <ul class="social-links">
+    <li>
+      <a href="https://www.instagram.com/a.k.borana_">
+        <i class="fa fa-instagram"></i> Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/Akborana3">
+        <i class="fa fa-github"></i> GitHub
+      </a>
+    </li>
+    <li>
+      <a href="https://t.me/Akborana">
+        <i class="fa fa-telegram"></i> Telegram
+      </a>
+    </li>
+  </ul>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
